@@ -26,9 +26,7 @@
         <action
             android:id="@+id/action_secondFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
-        <argument
-            android:name="_new"
-            app:argType="string" />
+
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
@@ -42,5 +40,8 @@
         <action
             android:id="@+id/action_thirdFragment_self"
             app:destination="@id/secondFragment" />
+        <argument
+            android:name="_new"
+            app:argType="string" />
     </fragment>
 </navigation>

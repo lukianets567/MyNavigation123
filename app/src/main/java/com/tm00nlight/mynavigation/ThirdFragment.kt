@@ -1,5 +1,6 @@
 package com.tm00nlight.mynavigation
 
+import android.app.DirectAction
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -24,7 +25,8 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.root.setOnClickListener {
-            findNavController().navigate(R.id.action_thirdFragment_to_secondFragment)
+            val action = ThirdFragmentDirection.action_thirdFragment_to_secondFragment()
+            findNavController().navigate(action)
         }
     }
 }
