@@ -25,7 +25,7 @@ class ThirdFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.root.setOnClickListener {
-            val action = ThirdFragmentDirection.action_thirdFragment_to_secondFragment()
+            val action = ThirdFragmentDirections.actionThirdFragmentToSecondFragment("_new")
             findNavController().navigate(action)
         }
     }
